@@ -1,0 +1,246 @@
+@charset "utf-8";  /* reset.css  common.css basic.css  default.css  */
+
+*{margin:0;padding:0;vertical-align:top;border:0;}
+html,body{width:100%;height:100%;}
+html{overflow-y:scroll;}
+
+body{font:14px/1 'Nanum Gothic','serif','sans-serif';color:#555;background:#000;}  /*font:14px/1 : 크기/선높이(line-height)*/
+#wrap{width:100%; height:auto;}
+h1,h2,h3,h4,h5,h6{font-size:14px;font-weight:normal;}
+a{color:#555;text-decoration:none;}
+ul{list-style:none;}
+em,i,address{font-style:normal}
+.floatclear:after{content:'';display:block;clear:both;}
+.hidden{}
+.blind{}
+
+#skip{z-index:4;position:relative;width:100%}
+#skip>li{font-size:0;}
+#skip>li>a{display:block;padding:0;font-size:0;text-align:center;color:#fff;background:#000;}
+#skip>li>a:focus{padding:20px 0;font-size:18px;}
+
+
+
+
+/*
+ * Noto Sans Thaana (Thaana) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+  font-family: 'Noto Sans Thaana';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/notosansthaana/v1/NotoSansThaana-Regular.eot);
+  src: url(//fonts.gstatic.com/ea/notosansthaana/v1/NotoSansThaana-Regular.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/notosansthaana/v1/NotoSansThaana-Regular.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosansthaana/v1/NotoSansThaana-Regular.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosansthaana/v1/NotoSansThaana-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans Thaana';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/ea/notosansthaana/v1/NotoSansThaana-Bold.eot);
+  src: url(//fonts.gstatic.com/ea/notosansthaana/v1/NotoSansThaana-Bold.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/notosansthaana/v1/NotoSansThaana-Bold.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosansthaana/v1/NotoSansThaana-Bold.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosansthaana/v1/NotoSansThaana-Bold.ttf) format('truetype');
+}
+
+/*
+ * Noto Sans Kannada (Kannada) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+  font-family: 'Noto Sans Kannada';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/notosanskannada/v3/NotoSansKannada-Regular.eot);
+  src: url(//fonts.gstatic.com/ea/notosanskannada/v3/NotoSansKannada-Regular.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/notosanskannada/v3/NotoSansKannada-Regular.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosanskannada/v3/NotoSansKannada-Regular.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosanskannada/v3/NotoSansKannada-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans Kannada';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/ea/notosanskannada/v3/NotoSansKannada-Bold.eot);
+  src: url(//fonts.gstatic.com/ea/notosanskannada/v3/NotoSansKannada-Bold.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/notosanskannada/v3/NotoSansKannada-Bold.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosanskannada/v3/NotoSansKannada-Bold.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosanskannada/v3/NotoSansKannada-Bold.ttf) format('truetype');
+}
+
+
+
+/*
+ * Nanum Pen Script (Korean) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+  font-family: 'Nanum Pen Script';
+  font-style: normal;
+  font-weight: 400;
+  src: url(http://fonts.gstatic.com/ea/nanumpenscript/v4/NanumPenScript-Regular.eot);
+  src: url(http://fonts.gstatic.com/ea/nanumpenscript/v4/NanumPenScript-Regular.eot?#iefix) format('embedded-opentype'),
+       url(http://fonts.gstatic.com/ea/nanumpenscript/v4/NanumPenScript-Regular.woff2) format('woff2'),
+       url(http://fonts.gstatic.com/ea/nanumpenscript/v4/NanumPenScript-Regular.woff) format('woff'),
+       url(http://fonts.gstatic.com/ea/nanumpenscript/v4/NanumPenScript-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Nanum Brush Script';
+  font-style: normal;
+  font-weight: 400;
+  src: url(http://fonts.gstatic.com/ea/nanumbrushscript/v4/NanumBrushScript-Regular.eot);
+  src: url(http://fonts.gstatic.com/ea/nanumbrushscript/v4/NanumBrushScript-Regular.eot?#iefix) format('embedded-opentype'),
+       url(http://fonts.gstatic.com/ea/nanumbrushscript/v4/NanumBrushScript-Regular.woff2) format('woff2'),
+       url(http://fonts.gstatic.com/ea/nanumbrushscript/v4/NanumBrushScript-Regular.woff) format('woff'),
+       url(http://fonts.gstatic.com/ea/nanumbrushscript/v4/NanumBrushScript-Regular.ttf) format('truetype');
+}
+
+/*
+ * Nanum Gothic (Korean) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(http://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot);
+  src: url(http://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+       url(http://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff2) format('woff2'),
+       url(http://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff) format('woff'),
+       url(http://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url(http://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot);
+  src: url(http://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+       url(http://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff2) format('woff2'),
+       url(http://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff) format('woff'),
+       url(http://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 800;
+  src: url(http://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.eot);
+  src: url(http://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'),
+       url(http://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.woff2) format('woff2'),
+       url(http://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.woff) format('woff'),
+       url(http://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.ttf) format('truetype');
+}
+
+/*
+ * Nanum Myeongjo (Korean) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+  font-family: 'Nanum Myeongjo';
+  font-style: normal;
+  font-weight: 400;
+  src: url(http://fonts.gstatic.com/ea/nanummyeongjo/v4/NanumMyeongjo-Regular.eot);
+  src: url(http://fonts.gstatic.com/ea/nanummyeongjo/v4/NanumMyeongjo-Regular.eot?#iefix) format('embedded-opentype'),
+       url(http://fonts.gstatic.com/ea/nanummyeongjo/v4/NanumMyeongjo-Regular.woff2) format('woff2'),
+       url(http://fonts.gstatic.com/ea/nanummyeongjo/v4/NanumMyeongjo-Regular.woff) format('woff'),
+       url(http://fonts.gstatic.com/ea/nanummyeongjo/v4/NanumMyeongjo-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Myeongjo';
+  font-style: normal;
+  font-weight: 600;
+  src: url(http://fonts.gstatic.com/ea/nanummyeongjo/v4/NanumMyeongjo-Bold.eot);
+  src: url(http://fonts.gstatic.com/ea/nanummyeongjo/v4/NanumMyeongjo-Bold.eot?#iefix) format('embedded-opentype'),
+       url(http://fonts.gstatic.com/ea/nanummyeongjo/v4/NanumMyeongjo-Bold.woff2) format('woff2'),
+       url(http://fonts.gstatic.com/ea/nanummyeongjo/v4/NanumMyeongjo-Bold.woff) format('woff'),
+       url(http://fonts.gstatic.com/ea/nanummyeongjo/v4/NanumMyeongjo-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Myeongjo';
+  font-style: normal;
+  font-weight: 700;
+  src: url(http://fonts.gstatic.com/ea/nanummyeongjo/v4/NanumMyeongjo-ExtraBold.eot);
+  src: url(http://fonts.gstatic.com/ea/nanummyeongjo/v4/NanumMyeongjo-ExtraBold.eot?#iefix) format('embedded-opentype'),
+       url(http://fonts.gstatic.com/ea/nanummyeongjo/v4/NanumMyeongjo-ExtraBold.woff2) format('woff2'),
+       url(http://fonts.gstatic.com/ea/nanummyeongjo/v4/NanumMyeongjo-ExtraBold.woff) format('woff'),
+       url(http://fonts.gstatic.com/ea/nanummyeongjo/v4/NanumMyeongjo-ExtraBold.ttf) format('truetype');
+}
+/*
+ * Nanum Gothic Coding (Korean) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+  font-family: 'Nanum Gothic Coding';
+  font-style: normal;
+  font-weight: 400;
+  src: url(http://fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.eot);
+  src: url(http://fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.eot?#iefix) format('embedded-opentype'),
+       url(http://fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.woff2) format('woff2'),
+       url(http://fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.woff) format('woff'),
+       url(http://fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic Coding';
+  font-style: normal;
+  font-weight: 700;
+  src: url(http://fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Bold.eot);
+  src: url(http://fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Bold.eot?#iefix) format('embedded-opentype'),
+       url(http://fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Bold.woff2) format('woff2'),
+       url(http://fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Bold.woff) format('woff'),
+       url(http://fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),
+       url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),
+       url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),
+       url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),
+       url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');
+}
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 400;
+   src: url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),
+        url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),
+        url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 500;
+   src: url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),
+        url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),
+        url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 700;
+   src: url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'),
+        url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'),
+        url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');
+ }
+ 
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 900;
+   src: url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),
+        url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),
+        url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');
+ }
+
+
+/* 워드프레스 글꼴 폰트 아이콘 */
+
+
+
+
